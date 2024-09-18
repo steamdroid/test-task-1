@@ -64,6 +64,7 @@
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
+    "@splidejs/splide": "^4.1.4",
     "normalize.css": "^8.0.1"
   },
   "packageManager": "yarn@3.2.2"

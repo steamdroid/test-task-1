@@ -13,9 +13,7 @@
 @import 'utils/fonts';
 
 /* plugins and css libraries styles */
-
-// @import 'swiper/swiper.min.css';
-// @import 'glightbox/dist/css/glightbox.css';
+@import '@splidejs/splide/dist/css/splide-core.min.css';
 
 /* component styles: buttons, headers, links and other small elements */
 @import 'components/button';
@@ -30,3 +28,5 @@
 /* block styles: header, footer, any meaningful sections */
 @import 'blocks/main-header';
 @import 'blocks/main-footer';
+@import 'blocks/top-menu';
+
