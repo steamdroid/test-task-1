@@ -8,6 +8,7 @@ module.exports = {
     'value-keyword-case': null, //fix errors on scss variable values
     'color-hex-length': 'long', //use long color codes, e.g. #ffffff instead of #fff
     'no-descending-specificity': null,
+    'scss/dollar-variable-pattern': /[a-z\-]+/
   },
   "ignoreFiles": [
     "src/scss/vendor/**/*.scss",
