@@ -18,6 +18,21 @@ body {
 
 }
 
+.container {
+  position: relative;
+  width: 100%;
+  max-width: $lg-container;
+  margin: 0 auto;
+
+  @include tablet {
+    max-width: $md-container;
+  }
+
+  @include phone {
+    max-width: $sm-container;
+  }
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
