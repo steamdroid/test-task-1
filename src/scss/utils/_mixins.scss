@@ -1,0 +1,37 @@
+// placeholder helper mixin
+@mixin placeholder {
+  ::input-placeholder {
+    @content;
+  }
+
+  :placeholder {
+    @content;
+  }
+
+  ::placeholder {
+    @content;
+  }
+
+  :input-placeholder {
+    @content;
+  }
+}
+
+@function rem($pixels, $context: $mainFontSize) {
+
+  @if unitless($pixels) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if unitless($context) {
+    $context: $context * 1px;
+  }
+
+  @return $pixels / $context * 1rem;
+}
+
+// size to one line
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}

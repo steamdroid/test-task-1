@@ -1,0 +1,28 @@
+.container {
+  position: relative;
+  width: 100%;
+  max-width: #{$xxl-container};
+  margin: 0 auto;
+
+
+  @include laptop-big {
+    max-width: #{$xl-container};
+    padding: 0 10px;
+  }
+
+  @include laptop {
+    max-width: #{$lg-container}
+  }
+
+  @include tablet {
+    max-width: #{$md-container}
+  }
+
+  @include phone-big {
+    max-width: #{$sm-container}
+  }
+
+  @include phone {
+    max-width: #{$xs-container}
+  }
+}

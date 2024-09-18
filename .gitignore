@@ -1,0 +1,9 @@
+node_modules/
+.yarn/
+assets/
+.env
+.pnp.cjs
+.pnp.loader.mjs
+.yarnrc.yml
+.DS_Store
+.timetracker

@@ -1,0 +1,22 @@
+// Modern format (woff + ttf)
+@mixin font($family, $filePath, $weight: normal, $style: normal) {
+
+    @font-face {
+        font-weight: $weight;
+        font-family: $family;
+        font-style: $style;
+        src:
+            url("#{$filePath}.woff") format("woff"),
+            url("#{$filePath}.woff2") format("woff2"),
+            url("#{$filePath}.ttf") format("truetype");
+        font-display: swap;
+
+    }
+
+}
+
+
+// example
+// @include font('Panton', '../fonts/Panton/Panton-Regular', normal);
+// @include font('Panton', '../fonts/Panton/Panton-SemiBold', 600);
+// @include font('Panton', '../fonts/Panton/Panton-Bold', 700);
