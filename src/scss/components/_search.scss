@@ -1,0 +1,44 @@
+@use 'sass:math';
+
+$search-input-height: 46px;
+$search-input-height--phone: 38px;
+
+
+.search {
+  position: relative;
+  width: 100%;
+  height: $search-input-height;
+
+  &__input {
+    position: relative;
+    width: 100%;
+    height: $search-input-height;
+    padding-top: 13.5px;
+    padding-right: 13.5px;
+    padding-bottom: 13.5px;
+    padding-left: 50px;
+    font-size: 16px;
+    border: 2px solid $c-input-border;
+    border-radius: math.div($search-input-height, 2);
+
+    @include phone {
+      height: $search-input-height--phone;
+      padding-left: 42px;
+      font-size: 14px;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: calc((100% - math.div($search-input-height, 2)) / 2);
+    left: 18px;
+    z-index: 1;
+    width: 26px;
+    height: 26px;
+
+    @include phone {
+      width: 18px;
+      height: 18px;
+    }
+  }
+}

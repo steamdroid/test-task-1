@@ -1,0 +1,43 @@
+@use 'sass:math';
+
+$burger-width: 24px;
+$burger-height: 17px;
+$burger-bar-height: 2px;
+
+.burger {
+  position: relative;
+  display: block;
+  width: $burger-width;
+  height: $burger-height;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  &__bars {
+    position: absolute;
+    top: calc(50% - math.div($burger-bar-height, 2));
+    display: block;
+    width: $burger-width;
+    height: $burger-bar-height;
+    background-color: $c-gray;
+
+    &::before,
+    &::after {
+      position: absolute;
+      left: 0;
+      display: block;
+      width: $burger-width;
+      height: $burger-bar-height;
+      background-color: $c-gray;
+      content: '';
+    }
+
+    &::before {
+      top: -8px;
+    }
+
+    &::after {
+      bottom: -8px;
+    }
+  }
+}

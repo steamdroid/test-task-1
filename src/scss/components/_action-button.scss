@@ -1,0 +1,40 @@
+.action-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $c-text--global;
+  text-decoration: none;
+  border: none;
+  transition: color $transition-generic;
+
+  &:hover {
+    color: $c-accent;
+  }
+
+  &__icon {
+    width: 18px;
+    height: 18px;
+
+    @include tablet {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+  }
+
+  &--show-sm {
+    display: none;
+    @include phone {
+      display: flex;
+    }
+  }
+
+  &--hide-sm {
+    @include phone {
+      display: none;
+    }
+  }
+}

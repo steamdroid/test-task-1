@@ -1,8 +1,8 @@
 .main-header {
   &__info {
     padding-top: 8px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid $c-gray;
+    padding-bottom: 4px;
+    border-bottom: 2px solid $c-light-gray;
 
     @include phone {
       display: none;
@@ -10,8 +10,103 @@
   }
 
   &__info-container {
-    display: flex;
-    flex-direction: row;
+    @include flex-row;
+  }
+
+  &__actions {
+    padding: 20px 0;
+  }
+
+  &__actions-container {
+    @include flex-row;
+
+    align-items: center;
+
+    @include phone {
+      display: grid;
+      grid-template-areas:
+          "logo logo buttons buttons"
+          "burger search search search";
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 39px 1fr 1fr 1fr;
+      row-gap: 10px;
+    }
+  }
+
+  &__logo {
+    width: 188px;
+    height: 27px;
+    margin-right: 51px;
+    text-decoration: none;
+
+    @include tablet {
+      width: 157px;
+      height: 22px;
+      margin-right: 45px;
+    }
+
+    @include phone {
+      grid-area: logo;
+      width: 149px;
+      height: 21px;
+      margin-right: auto;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__search {
+    max-width: 523px;
+
+    @include tablet {
+      max-width: 299px;
+    }
+
+    @include phone {
+      grid-area: search;
+      max-width: 100%;
+    }
+  }
+
+  &__buttons {
+    @include flex-row;
+
+    margin-left: auto;
+
+    @include phone {
+      grid-area: buttons;
+    }
+  }
+
+  &__button {
+    margin-left: 24px;
+
+    @include tablet {
+      margin-left: 30px;
+    }
+
+    @include phone {
+      margin-left: 24px;
+    }
+  }
+
+  &__button-text {
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__burger {
+    display: none;
+    margin-right: 15px;
+
+    @include phone {
+      display: block;
+      grid-area: burger;
+    }
   }
 
   &__link {

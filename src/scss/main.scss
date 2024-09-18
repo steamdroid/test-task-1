@@ -20,6 +20,9 @@
 /* component styles: buttons, headers, links and other small elements */
 @import 'components/button';
 @import 'components/link';
+@import 'components/search';
+@import 'components/action-button';
+@import 'components/burger';
 
 /* common styles, i.e. body, text, etc. */
 @import 'common';

@@ -1,10 +1,11 @@
 // colors
-$c-body-bg: #ffffff;
+$c-body-bg: #FFFFFF;
 $c-dark: #333333;
 $c-text--global: $c-dark;
 $c-accent: #E11C4B;
-$c-gray: #E8E8E8;
-
+$c-light-gray: #E8E8E8;
+$c-gray: #D8D8D8;
+$c-input-border: #DDDDDD;
 
 // typography
 $f-size-text-bg             : 160px;
@@ -14,3 +15,6 @@ $f-family--global   : Roboto, Segoe UI, Helvetica, Arial, sans-serif, Apple Colo
 $f-weight--global   : 400;
 $f-size--global     : 18px;
 $l-height--global   : 1.66;
+
+// misc
+$transition-generic: .3s ease;

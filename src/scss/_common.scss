@@ -29,7 +29,7 @@ body {
   }
 
   @include phone {
-    max-width: $sm-container;
+    max-width: calc($sm-container - 20px);
   }
 }
 
