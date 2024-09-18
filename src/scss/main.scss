@@ -12,9 +12,6 @@
 /* fonts */
 @import 'utils/fonts';
 
-/* section and container styles */
-@import 'utils/layouts';
-
 /* plugins and css libraries styles */
 
 // @import 'swiper/swiper.min.css';
@@ -22,11 +19,11 @@
 
 /* component styles: buttons, headers, links and other small elements */
 @import 'components/button';
+@import 'components/link';
 
 /* common styles, i.e. body, text, etc. */
 @import 'common';
 
 /* block styles: header, footer, any meaningful sections */
-@import 'blocks/header';
-@import 'blocks/breadcrumbs';
-@import 'blocks/footer';
+@import 'blocks/main-header';
+@import 'blocks/main-footer';

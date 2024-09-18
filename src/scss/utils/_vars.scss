@@ -1,11 +1,16 @@
 // colors
-$c-black: #000E1E;
+$c-body-bg: #ffffff;
+$c-dark: #333333;
+$c-text--global: $c-dark;
+$c-accent: #E11C4B;
+$c-gray: #E8E8E8;
+
 
 // typography
 $f-size-text-bg             : 160px;
 
 // General project settings, so for the most high-level configuration. (global-variables, custom properties)
-$f-family--global   : 'Panton', Roboto, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+$f-family--global   : Roboto, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
 $f-weight--global   : 400;
 $f-size--global     : 18px;
-$l-height--global   : 1.56;
+$l-height--global   : 1.66;

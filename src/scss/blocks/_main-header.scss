@@ -1,0 +1,26 @@
+.main-header {
+  &__info {
+    padding-top: 8px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid $c-gray;
+
+    @include phone {
+      display: none;
+    }
+  }
+
+  &__info-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__link {
+    margin-right: 36px;
+    font-size: 16px;
+
+    &--right {
+      margin-right: 0;
+      margin-left: auto;
+    }
+  }
+}
