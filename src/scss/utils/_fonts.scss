@@ -15,8 +15,5 @@
 
 }
 
-
-// example
-// @include font('Panton', '../fonts/Panton/Panton-Regular', normal);
-// @include font('Panton', '../fonts/Panton/Panton-SemiBold', 600);
-// @include font('Panton', '../fonts/Panton/Panton-Bold', 700);
+@include font('Roboto', '../fonts/Roboto-Regular', normal);
+@include font('Roboto', '../fonts/Roboto-Bold', 700);
