@@ -22,6 +22,10 @@ main {
   padding-top: 36px;
   padding-bottom: 82px;
 
+  @include tablet {
+    padding-bottom: 60px;
+  }
+
   @include phone {
     padding-top: 24px;
     padding-bottom: 72px;

@@ -7,6 +7,10 @@
     font-style: normal;
     line-height: 21px;
 
+    @include tablet {
+      margin-bottom: 12px;
+    }
+
     @include phone {
       font-size: 16px;
       line-height: 19px;

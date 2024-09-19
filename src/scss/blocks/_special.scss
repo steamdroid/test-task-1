@@ -1,14 +1,14 @@
 .special {
   &__banner {
-    margin-bottom: 18px;
+    margin-bottom: 28px;
+
+    @include phone {
+      margin-bottom: 20px;
+    }
 
     img {
       width: 100%;
       height: auto;
-    }
-
-    @include phone {
-      margin-bottom: 12px;
     }
   }
 
@@ -27,6 +27,7 @@
     color: $c-subtitle;
     font-weight: 400;
     font-size: 22px;
+    line-height: 26px;
 
     @include phone {
       font-size: 18px;

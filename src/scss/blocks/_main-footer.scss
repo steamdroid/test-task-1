@@ -39,7 +39,7 @@
     grid-area: footer-menu;
 
     @include phone {
-      margin-bottom: 20px;
+      margin-bottom: 18px;
     }
   }
 
@@ -77,11 +77,13 @@
     margin-left: auto;
 
     @include tablet {
+      margin-top: 16px;
       margin-left: 0;
     }
 
     @include phone {
       flex-direction: column;
+      margin-top: 0;
     }
   }
 
@@ -106,6 +108,7 @@
   }
 
   &__contact-icon {
+    margin-right: 10px;
     @include phone {
       width: 100%;
       max-width: 18px;
