@@ -1,6 +1,6 @@
 .main-footer {
-  padding-top: 30px;
-  padding-bottom: 18px;
+  padding-top: 36px;
+  padding-bottom: 28px;
   background-color: $c-footer-bg;
 
   @include tablet {
@@ -18,7 +18,7 @@
       "footer-copyright footer-socials";
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    row-gap: 24px;
+    row-gap: 18px;
 
     @include tablet {
       grid-template-areas:
@@ -51,6 +51,8 @@
   }
 
   &__menu-item {
+    line-height: 19px;
+
     &:not(:last-child) {
       margin-right: 62px;
 
@@ -71,6 +73,7 @@
     @include flex-row;
 
     grid-area: footer-contacts;
+    align-items: flex-start;
     margin-left: auto;
 
     @include tablet {
@@ -125,6 +128,7 @@
     align-self: center;
     color: $c-dark-gray;
     font-size: 14px;
+    line-height: 20px;
 
     @include phone {
       align-self: self-start;
