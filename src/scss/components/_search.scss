@@ -9,6 +9,10 @@ $search-input-height--phone: 38px;
   width: 100%;
   height: $search-input-height;
 
+  @include phone {
+    height: $search-input-height--phone;
+  }
+
   &__input {
     position: relative;
     width: 100%;

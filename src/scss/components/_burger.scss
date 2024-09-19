@@ -19,7 +19,7 @@ $burger-bar-height: 2px;
     display: block;
     width: $burger-width;
     height: $burger-bar-height;
-    background-color: $c-gray;
+    background-color: $c-dark-gray;
 
     &::before,
     &::after {
@@ -28,7 +28,7 @@ $burger-bar-height: 2px;
       display: block;
       width: $burger-width;
       height: $burger-bar-height;
-      background-color: $c-gray;
+      background-color: $c-dark-gray;
       content: '';
     }
 

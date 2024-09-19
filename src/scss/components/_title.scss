@@ -1,0 +1,8 @@
+.title {
+  font-weight: bold;
+  font-size: 36px;
+
+  @include phone {
+    font-size: 24px;
+  }
+}

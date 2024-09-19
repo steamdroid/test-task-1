@@ -12,4 +12,17 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   });
   splide.mount();
+
+  const catalogMenuOpen = document.querySelector('.js-catalog-menu-open');
+  const catalogMenuClose = document.querySelector('.js-catalog-menu-close');
+  const catalogMenu = document.querySelector('.js-catalog-menu');
+
+  catalogMenuOpen.addEventListener('click', (e) => {
+    e.preventDefault();
+    catalogMenu.classList.add('catalog-menu--open');
+  });
+  catalogMenuClose.addEventListener('click', (e) => {
+    e.preventDefault();
+    catalogMenu.classList.remove('catalog-menu--open');
+  });
 });
