@@ -1,0 +1,35 @@
+.socials {
+  @include flex-row;
+
+  column-gap: 12px;
+
+  &__link {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    background: $c-white;
+    border: 1px solid $c-dark-gray;
+    border-radius: 50%;
+    transition: border-color $transition-generic;
+
+    @include phone {
+      width: 30px;
+      height: 30px;
+    }
+
+    &:hover {
+      border-color: $c-accent;
+    }
+  }
+
+  &__icon {
+    margin: auto;
+
+    @include phone {
+      width: 100%;
+      max-width: 15px;
+      height: auto;
+    }
+  }
+}
