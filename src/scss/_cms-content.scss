@@ -1,0 +1,15 @@
+.cms-content {
+  p {
+    margin-bottom: 12px;
+    color: $c-dark;
+    font-weight: 400;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 21px;
+
+    @include phone {
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+}

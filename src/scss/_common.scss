@@ -18,6 +18,16 @@ body {
 
 }
 
+main {
+  padding-top: 36px;
+  padding-bottom: 72px;
+
+  @include phone {
+    padding-top: 24px;
+    padding-bottom: 72px;
+  }
+}
+
 .container {
   position: relative;
   width: 100%;
