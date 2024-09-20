@@ -1,6 +1,7 @@
 import sync from 'browser-sync';
 
 import dotenv from 'dotenv';
+
 dotenv.config();
 
 export default function serve() {
@@ -13,4 +14,4 @@ export default function serve() {
     ui: false,
     watch: true,
   });
-};
+}

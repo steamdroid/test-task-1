@@ -62,8 +62,6 @@ Ctrl+Shift+P — Preferences: Open Keyboard Shortcuts (JSON)
 - `yarn styles` — сборка и минификация только стилей в ./assets/static/
 - `yarn js` — сборка и минификация только js в ./assets/static/
 - `yarn images` — сжатие и создание webp-версий изображений в ./assets/static/
-- `yarn sprite` — сборка svg-спрайтов из содержимого `src/icons` в ./assets/static/
-  Спрайт будет находиться в `assets/static/img/ext-sprite.svg`, можно использовать его, например, в теге `<img>` как `<img src="img/ext-sprite.svg#clock">`, если исходная иконка называлась `clock.svg`.
 - `yarn stylelint` — запуск линтера stylelint с выдачей ошибок в консоли
 - `yarn stylelint:fix` — запуск линтера stylelint с автоматическим исправлением тех ошибок, которые возможно исправить автоматически
 
@@ -84,7 +82,6 @@ Ctrl+Shift+P — Preferences: Open Keyboard Shortcuts (JSON)
 ├── gulp Локальные модули для gulp
 └── src Исходные файлы
 │   └── fonts Шрифты
-│   └── icons svg-иконки для спрайта
 │   └── img Изображения
 │   └── js js-файлы
 │       └── main.js Основной JS-файл
