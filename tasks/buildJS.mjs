@@ -29,7 +29,7 @@ export default function buildJS() {
       path: path.join(__dirname, 'dist/js'),
       filename: '[name].js',
     },
-    watch: process.env.NODE_ENV === 'development',
+    watch: webpackMode === 'development',
     watchOptions: {
       ignored: /node_modules/,
       poll: 1000,
