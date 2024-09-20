@@ -25,6 +25,10 @@ $search-input-height--phone: 38px;
     border: 2px solid $c-input-border;
     border-radius: math.div($search-input-height, 2);
 
+    &:focus {
+      outline-color: $c-accent;
+    }
+
     @include phone {
       height: $search-input-height--phone;
       padding-left: 42px;
