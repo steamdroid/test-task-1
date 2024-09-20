@@ -11,7 +11,6 @@
     background: $c-white;
     border: 1px solid $c-dark-gray;
     border-radius: 50%;
-    transition: border-color $transition-generic;
 
     @include phone {
       width: 30px;
@@ -21,15 +20,18 @@
     &:hover {
       border-color: $c-accent;
 
-      .socials__icon {
+      .icon--fill {
         fill: $c-accent;
+      }
+
+      .icon--stroke {
+        stroke: $c-accent;
       }
     }
   }
 
   &__icon {
     margin: auto;
-    fill: $c-dark-gray;
 
     @include phone {
       width: 100%;

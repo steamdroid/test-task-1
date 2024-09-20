@@ -5,13 +5,16 @@
   color: $c-text--global;
   text-decoration: none;
   border: none;
-  transition: color $transition-generic;
 
   &:hover {
     color: $c-accent;
 
-    .action-button__icon {
+    .icon--fill {
       fill: $c-accent;
+    }
+
+    .icon--stroke {
+      stroke: $c-accent;
     }
   }
 
@@ -32,8 +35,12 @@
   &--active {
     color: $c-accent;
 
-    .action-button__icon {
+    .icon--fill {
       fill: $c-accent;
+    }
+
+    .icon--stroke {
+      stroke: $c-accent;
     }
   }
 

@@ -26,6 +26,18 @@
     margin-bottom: 4px;
     background: none;
     border: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+      .icon--fill {
+        fill: $c-accent;
+      }
+
+      .icon--stroke {
+        stroke: $c-accent;
+      }
+    }
   }
 
   &__title {

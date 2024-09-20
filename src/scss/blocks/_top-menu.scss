@@ -42,6 +42,18 @@
     border: none;
     cursor: pointer;
 
+    &:hover,
+    &:focus,
+    &:active {
+      .icon--stroke {
+        stroke: $c-accent;
+      }
+
+      .icon--fill {
+        fill: $c-accent;
+      }
+    }
+
     &:disabled {
       display: none;
     }

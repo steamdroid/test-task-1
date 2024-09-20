@@ -6,10 +6,17 @@
   background: none;
   border: none;
   cursor: pointer;
-  transition: color $transition-generic;
 
   &:hover {
     color: $c-accent;
+
+    .icon--fill {
+      fill: $c-accent;
+    }
+
+    .icon--stroke {
+      stroke: $c-accent;
+    }
   }
 
   &--icon {
