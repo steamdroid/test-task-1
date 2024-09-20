@@ -20,11 +20,16 @@
 
     &:hover {
       border-color: $c-accent;
+
+      .socials__icon {
+        fill: $c-accent;
+      }
     }
   }
 
   &__icon {
     margin: auto;
+    fill: $c-dark-gray;
 
     @include phone {
       width: 100%;
