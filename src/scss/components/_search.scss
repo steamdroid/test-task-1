@@ -39,6 +39,7 @@ $search-input-height--phone: 38px;
     z-index: 1;
     width: 26px;
     height: 26px;
+    fill: $c-accent;
 
     @include phone {
       width: 18px;

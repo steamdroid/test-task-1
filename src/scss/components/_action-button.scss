@@ -9,6 +9,10 @@
 
   &:hover {
     color: $c-accent;
+
+    .action-button__icon {
+      fill: $c-accent;
+    }
   }
 
   &__icon {
@@ -23,6 +27,14 @@
 
   &__text {
     font-size: 16px;
+  }
+
+  &--active {
+    color: $c-accent;
+
+    .action-button__icon {
+      fill: $c-accent;
+    }
   }
 
   &--show-sm {

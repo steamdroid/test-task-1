@@ -1,0 +1,32 @@
+.mobile-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  display: none;
+  width: 100%;
+  padding: 12px 10px;
+  background-color: $c-white;
+  box-shadow: 0 -3px 13px rgb(146 146 146 / 25%);
+
+  @include phone {
+    @include flex-row;
+
+    justify-content: space-between;
+  }
+
+  &__icon {
+    margin-bottom: 4px;
+    fill: $c-dark-gray;
+  }
+
+  &__text {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  &--hidden {
+    display: none;
+  }
+}
+

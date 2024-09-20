@@ -1,4 +1,5 @@
 import Splide from '@splidejs/splide';
+import { throttle } from 'lodash-es';
 
 document.addEventListener('DOMContentLoaded', () => {
   const splide = new Splide('.js-menu-splide', {
@@ -25,4 +26,20 @@ document.addEventListener('DOMContentLoaded', () => {
     e.preventDefault();
     catalogMenu.classList.remove('catalog-menu--open');
   });
+
+  const mobileNav = document.querySelector('.js-mobile-nav');
+
+  const toggleMobileNav = () => {
+    if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+      mobileNav.classList.add('mobile-nav--hidden');
+    } else {
+      mobileNav.classList.remove('mobile-nav--hidden');
+    }
+  };
+
+  const toggleMobileNavThrottled = throttle(toggleMobileNav, 250);
+
+  if (window.innerWidth < 768) {
+    document.addEventListener('scroll', toggleMobileNavThrottled);
+  }
 });
